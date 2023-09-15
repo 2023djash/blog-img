@@ -1,2 +1,0 @@
-# blog-img
-zhahuopu
