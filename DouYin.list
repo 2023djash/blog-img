@@ -1,8 +1,6 @@
 # NAME: DouYin
 # AUTHOR: YGG
-# UPDATED: 2023-10-12 14:22:23
-# DOMAIN-SUFFIX: 11
-# TOTAL: 11
+# UPDATED: 2023-10-12
 DOMAIN-SUFFIX,amemv.com,Douyin
 DOMAIN-SUFFIX,douyincdn.com,Douyin
 DOMAIN-SUFFIX,douyinpic.com,Douyin
@@ -14,3 +12,12 @@ DOMAIN-SUFFIX,ixiguavideo.com,Douyin
 DOMAIN-SUFFIX,pstatp.com,Douyin
 DOMAIN-SUFFIX,snssdk.com,Douyin
 DOMAIN-SUFFIX,toutiao.com,Douyin
+DOMAIN-KEYWORD, ecombdapi, DouYin
+DOMAIN-KEYWORD, zjurl, DouYin
+DOMAIN-KEYWORD, douyinstatic, DouYin
+DOMAIN-KEYWORD, zijieapi, DouYin
+DOMAIN-KEYWORD, douyin, DouYin
+DOMAIN-KEYWORD, douyinvod, DouYin
+DOMAIN-KEYWORD, zjcdn, DouYin
+DOMAIN-KEYWORD, douyinpic, DouYin
+DOMAIN-KEYWORD, toutiao, DouYin
