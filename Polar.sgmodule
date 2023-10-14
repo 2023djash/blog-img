@@ -1,0 +1,9 @@
+#!name=polar
+#!desc=🔗 [2023/10/6 08:14:42] polar
+
+[Script]
+polaqx_9 = type=http-response, pattern=^https?:\/\/.*\/v1\/payments\/(appleiap\/receipts\/confirmation|profiles\/@me\/subscription), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Polar.js, timeout=60, script-update-interval=0
+#polaqx_10 = type=http-request, pattern=^https?:\/\/.*\/v1\/payments\/(appleiap\/receipts\/confirmation|profiles\/@me\/subscription), script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Polar.js, timeout=60, script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api.polaxiong.com
