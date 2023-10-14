@@ -1,0 +1,14 @@
+#!name=Flightradar24
+#!desc=🔗 [2023/10/6 08:18:46] Flightradar24
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js/_end_/Flightradar24.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Script]
+
+Flightradar24_7 = type=http-response, pattern=^https://mobile.flightradar24.com/mobile/(user-session|subscribe), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% mobile.flightradar24.com
