@@ -1,0 +1,14 @@
+#!name=Documents
+#!desc=🔗 [2023/10/6 14:21:23] Documents
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js/_end_/Documents.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Script]
+
+Documents_8 = type=http-request, pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% license.pdfexpert.com
