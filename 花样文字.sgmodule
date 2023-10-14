@@ -1,18 +1,11 @@
-#!name=hywz
+#!name=花样文字yu
 #!desc=🔗 [2023/10/9 19:35:25] hywz
 
-# 🔗 模块链接
-#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/Crazy-Z7/Scrip/main/hywz.js/_end_/hywz.sgmodule?type=qx-rewrite&target=surge-module
-
-
 [Script]
-
-hywz_5 = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Crazy-Z7/Script/main/hywz.js, timeout=60, script-update-interval=0
+hywz_5 = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/花样文字yu.js, timeout=60, script-update-interval=0
 
 [Map Local]
-
 ^https:\/\/fcmtoken\.googleapis\.com\/register data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 [MITM]
-
 hostname = %APPEND% api.revenuecat.com,fcmtoken.googleapis.com
