@@ -1,14 +1,8 @@
-#!name=tongyong
+#!name=Collart系列
 #!desc=🔗 [2023/10/6 08:32:42] tongyong
 
-# 🔗 模块链接
-#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/gjwj666/qx/main/tongyong.js/_end_/tongyong.sgmodule?type=qx-rewrite&target=surge-module
-
-
 [Script]
-
-tongyong_16 = type=http-response, pattern=^https:\/\/iap\.etm\.tech\/receipts, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/gjwj666/qx/main/tongyong.js, timeout=60, script-update-interval=0
+tongyong_16 = type=http-response, pattern=^https:\/\/iap\.etm\.tech\/receipts, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Collart系列.js, timeout=60, script-update-interval=0
 
 [MITM]
-
 hostname = %APPEND% iap.etm.tech
