@@ -2,7 +2,6 @@
 长相思 3.85
 */
 var objc = JSON.parse($response.body);
-
     objc = {
   "code": 200,
   "data": {
@@ -26,5 +25,4 @@ var objc = JSON.parse($response.body);
   "server": "2",
   "t": "2023-10-08 20:02:26"
 }
-
 $done({body : JSON.stringify(objc)});
