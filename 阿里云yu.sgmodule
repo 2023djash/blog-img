@@ -1,0 +1,8 @@
+#!name=阿里云yu
+#!desc=🔗 [2023/10/10 06:27:58] alidrive
+
+[Script]
+alidrive_8 = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), requires-body=true, max-size=3145728, script-https://raw.githubusercontent.com/2023djash/blog-img/main/阿里云%20yu.js, timeout=60, script-update-interval=0
+
+[MITM]
+hostname = %APPEND% *.aliyundrive.com,*.alipan.com
