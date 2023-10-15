@@ -1,11 +1,6 @@
 /*************************************
-
 长相思 3.85
-time:2023.10.8
-赏析 学习 没办法解锁 
-
 */
-
 var objc = JSON.parse($response.body);
 
     objc = {
@@ -15,11 +10,10 @@ var objc = JSON.parse($response.body);
     "vip_expire": "2123-08-25 12:22:45",
     "qq_name": "Rain",
     "phone": "13000001010",
-    "head": "https://github.com/2023djash/blog-img/raw/main/CKMC8966.png",
     "had_vip": true,
     "wx_name": "Rain",
     "vip_type": "lifetime",
-    "location": "HN省",
+    "location": "TW省",
     "birthday": "1994年10月10日",
     "hometown": "",
     "is_device_user": false,
