@@ -2,7 +2,7 @@
 #!desc=🔗 [2023/10/10 06:27:58] alidrive
 
 [Script]
-alidrive_8 = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, timeout=60, script-update-interval=0
+alidrive_8 = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Aliyun.js, timeout=60, script-update-interval=0
 
 [MITM]
 hostname = %APPEND% *.aliyundrive.com,*.alipan.com
