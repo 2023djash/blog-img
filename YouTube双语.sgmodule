@@ -1,4 +1,4 @@
-#!name=1 Youtube Subtrans双语字幕🐶
+#!name=Youtube双语字幕
 #!desc=Youtube subtitles add-ons
 #!system=ios
 
@@ -8,8 +8,8 @@
 
 [Script]
 
-YouTube-Dualsub = type=http-response,pattern=https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/Keywos/Rule/main/JS/Dualsub.js
-YouTube-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.youtube.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Keywos/Rule/main/JS/Dualsub.js
+YouTube-Dualsub = type=http-response,pattern=https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Dualsub.js
+YouTube-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.youtube.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Dualsub.js
 
 [MITM]
 hostname = %APPEND% *.youtube.com
