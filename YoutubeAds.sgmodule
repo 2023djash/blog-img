@@ -1,0 +1,33 @@
+#!name=YoutubeAds
+#!desc=🔗 [2023/10/8 18:50:26] YoutubeAds
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf/_end_/YoutubeAds.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[URL Rewrite]
+
+# ======= 视频广告请求 ======= #
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
+[Script]
+
+# ======= 视频PIP|后台播放|瀑布流|搜索页|播放页|短视频|贴片广告  ======= #
+youtube.request.beta_17 = type=http-request, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js, timeout=60, script-update-interval=0
+
+youtube.response.beta_18 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js, timeout=60, script-update-interval=0
+
+[Map Local]
+
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# ======= 通用广告请求 ======= #
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+[MITM]
+
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
