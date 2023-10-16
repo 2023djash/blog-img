@@ -1,4 +1,4 @@
-#!name=changxiangsi
+#!name=长相思
 #!desc=🔗 [2023/10/9 09:48:34] changxiangsi
 
 # 🔗 模块链接
@@ -7,9 +7,9 @@
 
 [Script]
 
-changxiangsi_5 = type=http-response, pattern=https://poetry.nanxiani.cn/api/User/loginUserInfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/changxiangsi.js, timeout=60, script-update-interval=0
+changxiangsi_5 = type=http-response, pattern=https://poetry.nanxiani.cn/api/User/loginUserInfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/changxiangsi.js, timeout=60, script-update-interval=0
 
-changxiangsi2_6 = type=http-response, pattern=^http[s]?:\/\/poetry.nanxiani.cn\/api\/study\/*, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/changxiangsi2.js, timeout=60, script-update-interval=0
+changxiangsi2_6 = type=http-response, pattern=^http[s]?:\/\/poetry.nanxiani.cn\/api\/study\/*, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/changxiangsi2.js, timeout=60, script-update-interval=0
 
 [MITM]
 
