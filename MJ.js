@@ -4,7 +4,7 @@ chxm1023 = {
   "status" : 0,
   "receipt" : {
     "receipt_type" : "Production",
-    "app_item_id" : 2142640503,
+    "app_item_id" : 6447294089,
     "receipt_creation_date" : "2023-09-09 16:06:26 Etc/GMT",
     "bundle_id" : "com.hk.zhongwenhuatu",
     "original_purchase_date" : "2023-09-09 16:00:00 Etc/GMT",
@@ -29,7 +29,7 @@ chxm1023 = {
         "original_purchase_date" : "2023-09-09 09:09:10 Etc/GMT"
       }
     ],
-    "adam_id" : 2142640503,
+    "adam_id" : 6447294089,
     "receipt_creation_date_pst" : "2023-09-09 06:06:26 America/Los_Angeles",
     "request_date" : "2023-09-09 16:06:27 Etc/GMT",
     "request_date_pst" : "2023-09-09 06:06:27 America/Los_Angeles",
