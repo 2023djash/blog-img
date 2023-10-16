@@ -1,8 +1,11 @@
-#!name=MJ
-#!desc=🔗 [2023/10/8 12:01:20] MJ
+#!name=MJ111
+#!desc=🔗 [2023/10/16 23:52:42] io111
+
 
 [Script]
-MJ_8 = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/MJ.js, timeout=60, script-update-interval=0
+
+io111_13 = type=http-response, pattern=^http[s]?:\/\/api.io111.com\/api\/system_setting\/getSystemSetting, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/MJ.js, timeout=60, script-update-interval=0
 
 [MITM]
-hostname = %APPEND% buy.itunes.apple.com
+
+hostname = %APPEND% api.io111.com
