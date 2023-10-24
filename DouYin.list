@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,ixiguavideo.com,Douyin
 DOMAIN-SUFFIX,pstatp.com,Douyin
 DOMAIN-SUFFIX,snssdk.com,Douyin
 DOMAIN-SUFFIX,toutiao.com,Douyin
+DOMAIN-SUFFIX,sign.douyinpic.com,Douyin
 DOMAIN-KEYWORD, ecombdapi, DouYin
 DOMAIN-KEYWORD, zjurl, DouYin
 DOMAIN-KEYWORD, douyinstatic, DouYin
@@ -21,3 +22,5 @@ DOMAIN-KEYWORD, douyinvod, DouYin
 DOMAIN-KEYWORD, zjcdn, DouYin
 DOMAIN-KEYWORD, douyinpic, DouYin
 DOMAIN-KEYWORD, toutiao, DouYin
+DOMAIN-KEYWORO,sign.douyinpic.com,Douyin
+
