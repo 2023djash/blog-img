@@ -43,7 +43,7 @@ if (url.indexOf(vipa) != -1){
 
 //我的页面SVIP
 if (url.indexOf(vipb) != -1){
- body = body.replace(/\{.+\}/g, '\{  "description" : "有效期至2088-08-08",  "titleNotice" : "天生我才必有用",  "activityAction" : "smartdrive://webview?url=https%3A%2F%2Fpages.aliyundrive.com%2Fmobile-page%2Fweb%2Fmembership.html%3FdisableNav%3DYES%26renew%3DYES",  "rightButtonText" : "SVIP",  "activityText" : "😋",  "identity" : "svip",  "backgroundImage" : "https://github.com/2023djash/Surge/raw/main/IMG_3718.jpeg",  "titleImage" : "https://gw.alicdn.com/imgextra/i2/O1CN01snE6rA1pVg95HyRBl_!!6000000005366-2-tps-214-49.png",  "backgroudImage" : null  }');
+ body = body.replace(/\{.+\}/g, '\{  "description" : "有效期至2088-08-08",  "titleNotice" : "天生我才必有用",  "activityAction" : "smartdrive://webview?url=https%3A%2F%2Fpages.aliyundrive.com%2Fmobile-page%2Fweb%2Fmembership.html%3FdisableNav%3DYES%26renew%3DYES",  "rightButtonText" : "SVIP",  "activityText" : "😋",  "identity" : "svip",  "backgroundImage" : "https://github.com/2023djash/Surge/raw/main/IMG_1096.jpeg",  "titleImage" : "https://gw.alicdn.com/imgextra/i2/O1CN01snE6rA1pVg95HyRBl_!!6000000005366-2-tps-214-49.png",  "backgroudImage" : null  }');
 }
 
 if (url.indexOf(get) != -1){
