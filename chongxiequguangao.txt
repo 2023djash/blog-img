@@ -1,3 +1,4 @@
+jingxiad
 3#!name=广告拦截合集-重写
 #!desc=(R)针对部分APP开屏广告，应用内广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！
 #!author=fmz200
@@ -336,11 +337,6 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https:\/\/img11.360buyimg.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ url reject-200
 https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 
-# > 京喜
-^https:\/\/img14.360buyimg.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/ url reject-200
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising url response-body jdLiteAdvertisingVO response-body random_body
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush url response-body pushData response-body random_body
-^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/jingxiAd.js
 
 # > 京东金融
 ^https:\/\/m.360buyimg.com\/mobilecms\/s1125x2436_jfs\/ url reject-200
