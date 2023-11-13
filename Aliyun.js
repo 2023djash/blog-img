@@ -1,12 +1,7 @@
 /*************************************
 
 项目名称：阿里云盘 净化/解锁SVIP
-下载地址：https://t.cn/A6GqTACm
-脚本作者：chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
-使用说明：非一次性解锁，每次解锁需打开脚本
-
-**************************************
+使用声明：禁止转载与售卖！
 
 *************************************/
 
@@ -43,7 +38,7 @@ if (url.indexOf(vipa) != -1){
 
 //我的页面SVIP
 if (url.indexOf(vipb) != -1){
- body = body.replace(/\{.+\}/g, '\{  "description" : "1970-10-10",  "titleNotice" : "君子以自强不息",  "activityAction" : "smartdrive://webview?url=https%3A%2F%2Fpages.aliyundrive.com%2Fmobile-page%2Fweb%2Fmembership.html%3FdisableNav%3DYES%26renew%3DYES",  "rightButtonText" : "SVIP",  "activityText" : "🇨🇳",  "identity" : "SVIP",  "backgroundImage" : "https://github.com/2023djash/Surge/raw/main/IMG_0492_polarr.jpeg",  "titleImage" : "https://gw.alicdn.com/imgextra/i2/O1CN01snE6rA1pVg95HyRBl_!!6000000005366-2-tps-214-49.png",  "backgroudImage" : null  }');
+ body = body.replace(/\{.+\}/g, '\{  "description" : "1970-10-10",  "titleNotice" : "君子以自强不息",  "activityAction" : "smartdrive://webview?url=https%3A%2F%2Fpages.aliyundrive.com%2Fmobile-page%2Fweb%2Fmembership.html%3FdisableNav%3DYES%26renew%3DYES",  "rightButtonText" : "SVIP",  "activityText" : "🇨🇳",  "identity" : "SVIP",  "backgroundImage" : "https://raw.githubusercontent.com/2023djash/Surge/main/IMG_0492_polarr.jpeg",  "titleImage" : "https://gw.alicdn.com/imgextra/i2/O1CN01snE6rA1pVg95HyRBl_!!6000000005366-2-tps-214-49.png",  "backgroudImage" : null  }');
 }
 
 if (url.indexOf(get) != -1){
