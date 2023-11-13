@@ -27,8 +27,8 @@ if (url.indexOf(tubiao) != -1){
 
 //去除-我的-插条
 if (url.indexOf(chatiao) != -1){
-  delete chxm1023.result.guideInfo;
-  body = JSON.stringify(chxm1023);
+  delete a99999.result.guideInfo;
+  body = JSON.stringify(a99999);
 }
 
 //购买页面的SVIP
@@ -51,29 +51,29 @@ if (url.indexOf(bofang) != -1){
 }
 
 if (url.indexOf(adrive) != -1){
-  chxm1023.capacity_level_info = {
+  a99999.capacity_level_info = {
     "capacity_type" : "normal"
   };
-  chxm1023.user_capacity_limit_details = {
+  a99999.user_capacity_limit_details = {
     "limit_download" : false,
     "limit_consume" : false
   };
-  body = JSON.stringify(chxm1023);
+  body = JSON.stringify(a99999);
 }
 
 //净化项目
 if ($request.url.indexOf(hengtiao) != -1){
-  delete chxm1023.result;  //横条信息
-  body = JSON.stringify(chxm1023);
+  delete a99999.result;  //横条信息
+  body = JSON.stringify(a99999);
 }
 
 if ($request.url.indexOf(guolv) != -1){
-  chxm1023.coreFeatures.items = chxm1023.coreFeatures.items.filter(item => item.code !== "AI_ASSISTANT");  //图搜
-  delete chxm1023.signIn;  //登录
-  delete chxm1023.banners; //横幅
-  delete chxm1023.minorBackup;  //设备列表
-  delete chxm1023.mainBackup;  //备份还原
-  body = JSON.stringify(chxm1023);
+  a99999.coreFeatures.items = a99999.coreFeatures.items.filter(item => item.code !== "AI_ASSISTANT");  //图搜
+  delete a99999.signIn;  //登录
+  delete a99999.banners; //横幅
+  delete a99999.minorBackup;  //设备列表
+  delete a99999.mainBackup;  //备份还原
+  body = JSON.stringify(a99999);
 }
 
 $done({ body });
