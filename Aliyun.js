@@ -7,7 +7,7 @@
 
 
 var body = $response.body;
-var chxm1023 = JSON.parse(body);
+var a99999 = JSON.parse(body);
 const url = $request.url;
 const tubiao = '/users/me';
 const chatiao = '/users/tools';
