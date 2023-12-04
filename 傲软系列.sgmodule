@@ -1,8 +1,0 @@
-#!name=傲软系列
-#!desc=🔗 [2023/10/6 09:16:35] 
-
-[Script]
-tongyong3_25 = type=http-response, pattern=^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/傲软系列.js, timeout=60, script-update-interval=0
-
-[MITM]
-hostname = %APPEND% *.aoscdn.com,*.apsapp.cn
