@@ -1,8 +1,0 @@
-#!name=Collart系列
-#!desc=🔗 [2023/10/6 08:32:42] tongyong
-
-[Script]
-tongyong_16 = type=http-response, pattern=^https:\/\/iap\.etm\.tech\/receipts, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/blog-img/main/Collart系列.js, timeout=60, script-update-interval=0
-
-[MITM]
-hostname = %APPEND% iap.etm.tech
