@@ -1,5 +1,5 @@
 proxy-providers:
-  🛫 我的机场:
+    我的机场:
     type: http
     # 修改为你的 Clash 订阅链接
     url: "https://sub4.download-hiccup.xyz/api/v1/client/subscribe?token=79e6637a1b2fd456202c27a796390c96"
