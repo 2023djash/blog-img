@@ -137,7 +137,7 @@ proxy-groups:
 
   - {name: 台湾节点, <<: *select, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
-  - {name: 欧洲节点, <<: *select, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺",}
+  - {name: 欧洲节点, <<: *select, filter: "(?i)🇬🇧|🇫🇷|🇻🇳|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺",}
 
 rule-providers:
 
