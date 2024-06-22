@@ -99,7 +99,7 @@ d: &d {type: http, behavior: domain, format: text, interval: 86400}
 i: &i {type: http, behavior: ipcidr, format: text, interval: 86400}
 
 proxy-providers:
-  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: https://sub.id9.cc/sub?target=clashr&new_name=true&url=https%3A%2F%2Fs4.ssysub1.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D8290dd10d2dd967bf58dbb536601bbbf&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini}
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: 机场连接}
     # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
     # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
 
@@ -113,21 +113,13 @@ proxy-groups:
 
   - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
 
-  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
-
   - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
 
   - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
 
   - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
 
-  - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
-
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
-
-  - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
-
-  - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
 
   - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
 
@@ -135,73 +127,57 @@ proxy-groups:
 
   #节点地区分组
 
-  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: 香港节点, <<: *select, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
-  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
+  - {name: 美国节点, <<: *select, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
-  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+  - {name: 狮城节点, <<: *select, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
 
-  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  - {name: 日本节点, <<: *select, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
 
-  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  - {name: 台湾节点, <<: *select, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
-  - {name: 欧洲节点, <<: *url-test, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
+  - {name: 欧洲节点, <<: *select, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇻🇳|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
 rule-providers:
 
   #广告拦截
   AD: {<<: *c, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
 
-  # 苹果服务
-  Apple: {<<: *c, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
-
   # 谷歌服务
   YouTube: {<<: *c, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
   Google: {<<: *c, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+  Github: {<<: *c, path: ./rule-providers/Github.list,  url: https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Github.list}
 
   # 电报消息
   Telegram: {<<: *c, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
 
-  # 推特消息
-  Twitter: {<<: *c, path: ./rule-providers/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
-
-  # 游戏平台
-  Steam: {<<: *c, path: ./rule-providers/steam.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
-  Epic: {<<: *c, path: ./rule-providers/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
-
   # AI平台
   AI: {<<: *c, path: ./rule-providers/AI.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list}
 
-  # Emby
-  Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
+  # Spotify
+  Spotify: {<<: *c, path: ./rule-providers/Spotify.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Spotify.list}
 
   # 国际媒体
-  Spotify: {<<: *c, path: ./rule-providers/Spotify.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Spotify.list}
+  
   Bahamut: {<<: *c, path: ./rule-providers/Bahamut.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Bahamut.list}
   Netflix: {<<: *c, path: ./rule-providers/Netflix.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Netflix.list}
   Disney: {<<: *c, path: ./rule-providers/Disney.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Disney.list}
-  PrimeVideo: {<<: *c, path: ./rule-providers/PrimeVideo.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/PrimeVideo.list}
-  HBO: {<<: *c, path: ./rule-providers/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/HBO.list}
-
+  TikTok: {<<: *c, path: ./rule-providers/TikTok.list,  url: https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/TikTok.list
+  
 rules:
   - RULE-SET,AD,广告拦截
   - RULE-SET,AI,AI
-  - RULE-SET,Apple,苹果服务
   - RULE-SET,YouTube,谷歌服务
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Telegram,电报消息
-  - RULE-SET,Twitter,推特消息
-  - RULE-SET,Steam,游戏平台
-  - RULE-SET,Epic,游戏平台
-  - RULE-SET,Emby,Emby
-  - RULE-SET,Spotify,国际媒体
+  - RULE-SET,Spotify,谷歌服务
   - RULE-SET,Bahamut,国际媒体
   - RULE-SET,Netflix,国际媒体
   - RULE-SET,Disney,国际媒体
-  - RULE-SET,PrimeVideo,国际媒体
-  - RULE-SET,HBO,国际媒体
+  - RULE-SET,TikTok,国际媒体
   - GEOSITE,onedrive,微软服务
-  - GEOSITE,github,微软服务
+  - GEOSITE,github,谷歌服务
   - GEOSITE,microsoft,微软服务
   - GEOSITE,gfw,国外网站
   - GEOSITE,cn,DIRECT
