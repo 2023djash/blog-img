@@ -162,7 +162,6 @@ rule-providers:
   
   Bahamut: {<<: *c, path: ./rule-providers/Bahamut.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Bahamut.list}
   Netflix: {<<: *c, path: ./rule-providers/Netflix.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Netflix.list}
-  Disney: {<<: *c, path: ./rule-providers/Disney.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Disney.list}
   TikTok: {<<: *c, path: ./rule-providers/TikTok.list,  url: https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/TikTok.list
   
 rules:
@@ -174,7 +173,6 @@ rules:
   - RULE-SET,Spotify,谷歌服务
   - RULE-SET,Bahamut,国际媒体
   - RULE-SET,Netflix,国际媒体
-  - RULE-SET,Disney,国际媒体
   - RULE-SET,TikTok,国际媒体
   - GEOSITE,onedrive,微软服务
   - GEOSITE,github,谷歌服务
