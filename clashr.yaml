@@ -99,7 +99,7 @@ d: &d {type: http, behavior: domain, format: text, interval: 86400}
 i: &i {type: http, behavior: ipcidr, format: text, interval: 86400}
 
 proxy-providers:
-  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: https://s4.ssysub1.xyz/api/v1/client/subscribe?token=8290dd10d2dd967bf58dbb536601bbbf}
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: https://sub.id9.cc/sub?target=clashr&new_name=true&url=https%3A%2F%2Fs4.ssysub1.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D8290dd10d2dd967bf58dbb536601bbbf&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini}
     # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
     # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
 
